@@ -1,0 +1,13 @@
+{ Este es un archivo de recurso de Lazarus generado automáticamente }
+
+LazarusResources.Add('TfrmErrors','FORMDATA',[
+  'TPF0'#10'TfrmErrors'#9'frmErrors'#4'Left'#3']'#1#6'Height'#3#142#1#3'Top'#2
+  +'U'#5'Width'#3#144#1#13'ActiveControl'#7#9'lstErrors'#11'BorderStyle'#7#13'b'
+  +'sSizeToolWin'#7'Caption'#6#5'Error'#12'ClientHeight'#3#142#1#11'ClientWidth'
+  +#3#144#1#8'OnResize'#7#10'FormResize'#8'Position'#7#16'poMainFormCenter'#10
+  +'LCLVersion'#6#8'0.9.28.2'#0#8'TListBox'#9'lstErrors'#4'Left'#2#16#6'Height'
+  +#3'@'#1#3'Top'#2#16#5'Width'#3'p'#1#10'ItemHeight'#2#0#8'TabOrder'#2#0#0#0#7
+  +'TBitBtn'#5'btnOk'#4'Left'#3#160#0#6'Height'#2#30#3'Top'#3'^'#1#5'Width'#2'X'
+  +#7'Caption'#6#3'&Ok'#7'Default'#9#4'Kind'#7#4'bkOK'#11'ModalResult'#2#1#8'Ta'
+  +'bOrder'#2#1#0#0#0
+]);

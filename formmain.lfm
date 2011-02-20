@@ -1,0 +1,1133 @@
+object frmMain: TfrmMain
+  Left = 411
+  Height = 519
+  Top = 206
+  Width = 551
+  Caption = 'Squeezelang (shuar) - The Incredible Shrinking Language Tool'
+  ClientHeight = 499
+  ClientWidth = 551
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnResize = FormResize
+  Position = poDesktopCenter
+  LCLVersion = '0.9.28.2'
+  object lblGameFolder: TLabel
+    Left = 274
+    Height = 16
+    Top = 24
+    Width = 68
+    Caption = 'Game Folder'
+    ParentColor = False
+    Visible = False
+  end
+  object lblSect1: TLabel
+    Left = 8
+    Height = 18
+    Top = 24
+    Width = 148
+    Caption = 'Select your game folder'
+    Font.Height = -13
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object eGameFolder: TEdit
+    Left = 8
+    Height = 23
+    Top = 40
+    Width = 240
+    OnClick = eGameFolderClick
+    OnExit = eGameFolderExit
+    TabOrder = 0
+  end
+  object btnFolder: TBitBtn
+    Left = 256
+    Height = 23
+    Top = 38
+    Width = 88
+    Caption = 'Explore'
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000033000000330000000A469AD300469A
+      D300469AD300469AD300469AD300459AD400429DDC0071777C0075706D007472
+      700075726F007B736B00000000333A6EA0FF3B6E9EFF213F5A5D469AD3000000
+      000B0000000A0000000A0000000A0000000A0000000A00000011000000320000
+      00330000003300000033316EA7FF29B2FFFF44C8FFFF3A83CCFF0000002F2959
+      7A5F2655755C2655745C2655755C2555755B225578594D5359776B696AF96767
+      6BFF67676AFF6D6A69FF81746BFF3BC6FFFF57DBFFFF3980C9FF4598D0F14398
+      D2FF4094D0FF3E92CFFF3E92CFFF3D95D4FF4D8BB8FF79706BFFE9C890FFFFEE
+      A7FFFFF5B1FFE8D5A3FF77716CFFA08F85FF327ECDFF3881CB004499D2FF3F94
+      D0FFABFBFFFF9BF3FFFF92F2FFFF92F8FFFF797C7DFFEAC186FFFFE7A6FFFFE7
+      A6FFFFEFB3FFFFF9BBFFE9D6A2FF817772FF2F75A467469CD5004397D1FF56AC
+      DDFF8EDAF5FFA2EDFFFF82E6FFFF82EDFFFF766D6DFFFFE19DFFFFEFCAFFFFE7
+      B3FFFFE9ABFFFFEFB2FFFFF3AEFF7C7370FF3990CCC5449AD5004296D1FF71C4
+      EAFF6CBCE6FFBBF2FFFF75DFFFFF75E6FFFF7B7171FFFFDD97FFFFF7E4FFFFED
+      C8FFFFE7B2FFFFE6A5FFFFEBA3FF807674FF4AA3DFFF000000124095D0FF90DD
+      F8FF44A0D8FFDDFCFFFFDAFBFFFFDAFFFFFF8D8A8AFFEDBD7CFFFFF5DBFFFFF7
+      E4FFFFEECAFFFFE5A4FFEBC890FF89898AFF7BC6EFFF3277A6713E93CFFFB2F6
+      FFFF51ACDEFF358ACAFF358BCBFF348DCFFF4F8CB9FF93857DFFEEBE7DFFFFDD
+      96FFFFE09BFFECC589FF8C817DFF8AC8DCFFA9E4FCFF3A8AC2C83D92CFFFB8F3
+      FFFF77DFFEFF7BE0FEFF7BE1FFFF7BE1FFFF79E4FFFF69ACCEFF88878DFF9389
+      85FF928986FF9A9795FFBED8E2FFD4FCFFFFDBFDFFFF3E94D0FF3C92CFFFC0F3
+      FFFF70D9FBFF73DAFBFF74DAFBFF74DAFBFF73DBFDFF73DFFFFF4CAEE4FF3692
+      D5FF3692D5FF3591D3FF3390D1FF3791D0FF3D94D0FF4398D2AE3B92CFFFCAF6
+      FFFF69D5F9FF6CD5F9FF6AD4F9FF69D4F9FF69D5F9FF6AD6FBFF6BD9FCFF6CDB
+      FEFF6CDBFEFF6ADBFEFFDBFDFFFF3C93D0FF367BAA2F469AD3003B92CFFFD5F7
+      FFFF60D1F9FF61D0F8FFB4EBFDFFD9F6FFFFDAF8FFFFDAF8FFFFDAF9FFFFDBF9
+      FFFFDAF9FFFFDAFAFFFFDFFEFFFF3D94D0FF4599D335469AD3003D94D0FFDCFC
+      FFFFD8F7FFFFD8F7FFFFDBFAFFFF358ECDFF3991CEFF3A92CFFF3A92CFFF3A92
+      CFFF3A92CFFF3A92CFFF3D94D0FF4298D2EA469AD300469AD3004398D2EF3D94
+      D0FF3A92CFFF3A92CFFF3D94D0FF4197D1E44398D22B4498D2324498D2334498
+      D2334498D2334499D2334499D337459AD300469AD300469AD300
+    }
+    OnClick = btnFolderClick
+    TabOrder = 1
+  end
+  object cbLanguage: TComboBox
+    Left = 352
+    Height = 23
+    Top = 38
+    Width = 89
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'English'
+    )
+    OnChange = cbLanguageChange
+    Style = csDropDownList
+    TabOrder = 2
+    Text = 'English'
+  end
+  object sbInfo: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 0
+    Width = 551
+    Align = alTop
+    Panels = <    
+      item
+        Style = psOwnerDraw
+        Text = 'Size before squeeze:'
+        Width = 200
+      end    
+      item
+        Style = psOwnerDraw
+        Text = 'Size afer squeeze:'
+        Width = 100
+      end    
+      item
+        Style = psOwnerDraw
+        Text = 'Video size:'
+        Width = 50
+      end>
+    SimplePanel = False
+    OnDrawPanel = sbInfoDrawPanel
+  end
+  object pcMain: TPageControl
+    Left = 0
+    Height = 435
+    Top = 64
+    Width = 551
+    ActivePage = TabSheet1
+    Align = alBottom
+    BorderSpacing.InnerBorder = 1
+    BorderSpacing.CellAlignHorizontal = ccaLeftTop
+    BorderSpacing.CellAlignVertical = ccaLeftTop
+    Images = ImageList1
+    PopupMenu = popMnu2
+    TabIndex = 0
+    TabOrder = 4
+    object TabSheet1: TTabSheet
+      Caption = '1.- Idiomas'
+      ClientHeight = 407
+      ClientWidth = 543
+      object lblSect2: TLabel
+        Left = 12
+        Height = 18
+        Top = 10
+        Width = 265
+        Caption = '2.- Select your file name patterns to shrink'
+        Font.Height = -13
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object lblSect3: TLabel
+        Left = 12
+        Height = 18
+        Top = 138
+        Width = 114
+        Caption = '3.- Perform search'
+        Font.Height = -13
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object lblFound: TLabel
+        Left = 140
+        Height = 18
+        Top = 162
+        Width = 209
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = '0 files found'
+        Font.Color = clGreen
+        Font.Height = -13
+        ParentColor = False
+        ParentFont = False
+      end
+      object btnSearch: TBitBtn
+        Left = 268
+        Height = 23
+        Top = 138
+        Width = 88
+        Caption = 'Search'
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000E5A3E320F5B3FFF126244FF0E5A3E5AFFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF0015614436176346FF29855FFF449C77FF3D7F65FFFFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF001E6A4C38216D4FFF368F6BFF52A583FF98C5B2FF256F52FFFFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF002B7859FF459A79FF63B092FF9EC9B8FF357E61FF27745543FFFFFF00FFFF
+          FF00FFFFFF0050505048505050B1505050E7505050E7505050B1505050489898
+          98FF56A688FF74BAA0FFA3CDBDFF3D8768FF317F5E41FFFFFF00FFFFFF005656
+          561B565656967F7F7FFFC9C9C9FFECECECFFECECECFFC9C9C9FF7F7F7FFF5F5F
+          5FEA606060D0AAD2C2FF45906FFF3B8A673DFFFFFF00FFFFFF00FFFFFF005C5C
+          5C96AEAEAEFFFAFAFAFFF8F8F8FFF4F4F4FFF4F4F4FFF8F8F8FFFAFAFAFFA9A9
+          A9FF5F5F5FE9989898FFFFFFFF00FFFFFF00FFFFFF00FFFFFF006363635A9393
+          93FFF8F8F8FFEEEEEEFFEDEDEDFFEDEDEDFFEDEDEDFFEDEDEDFFEFEFEFFFF6F6
+          F6FF888888FF6363635AFFFFFF00FFFFFF00FFFFFF00FFFFFF006B6B6BC3D6D6
+          D6FFEEEEEEFFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFF0F0
+          F0FFD6D6D6FF6B6B6BC3FFFFFF00FFFFFF00FFFFFF00FFFFFF00737373F9F1F1
+          F1FFE0E0E0FFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFE1E1
+          E1FFEFEFEFFF737373F3FFFFFF00FFFFFF00FFFFFF00FFFFFF007B7B7BF9F1F1
+          F1FFDCDCDCFFD7D7D7FFD7D7D7FFD7D7D7FFD7D7D7FFD7D7D7FFD7D7D7FFDDDD
+          DDFFEDEDEDFF7B7B7BF0FFFFFF00FFFFFF00FFFFFF00FFFFFF00838383C3DBDB
+          DBFFE4E4E4FFD0D0D0FFCFCFCFFFCFCFCFFFCFCFCFFFCFCFCFFFD1D1D1FFE8E8
+          E8FFDCDCDCFF838383C3FFFFFF00FFFFFF00FFFFFF00FFFFFF008A8A8A5AB1B1
+          B1FFF3F3F3FFD6D6D6FFCCCCCCFFCACACAFFCACACAFFCCCCCCFFD8D8D8FFF3F3
+          F3FFA6A6A6FF8A8A8A5AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009191
+          9196CCCCCCFFF4F4F4FFE6E6E6FFD9D9D9FFD9D9D9FFE6E6E6FFF4F4F4FFC7C7
+          C7FF91919196FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009797
+          972797979796B8B8B8FFDFDFDFFFF1F1F1FFF1F1F1FFDFDFDFFFB8B8B8FF9797
+          97969797971BFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF009D9D9D549D9D9DBA9D9D9DED9D9D9DED9D9D9DBA9D9D9D54FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+        }
+        OnClick = btnSearchClick
+        TabOrder = 0
+      end
+      object pnlPattern: TPanel
+        Left = 12
+        Height = 106
+        Top = 26
+        Width = 351
+        BevelOuter = bvNone
+        ClientHeight = 106
+        ClientWidth = 351
+        TabOrder = 1
+        object ePatter1: TEdit
+          Left = 0
+          Height = 23
+          Hint = 'Ej: [a-z]+.bik'
+          Top = 8
+          Width = 336
+          Align = alCustom
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 0
+          Text = '.'
+        end
+        object ePatter2: TEdit
+          Left = 0
+          Height = 23
+          Hint = 'Ej: [a-z]+.bik'
+          Top = 33
+          Width = 336
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 1
+        end
+        object ePatter3: TEdit
+          Left = 0
+          Height = 23
+          Hint = 'Ej: [a-z]+.bik'
+          Top = 57
+          Width = 336
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 2
+        end
+        object ePatter4: TEdit
+          Left = 0
+          Height = 23
+          Hint = 'Ej: [a-z]+.bik'
+          Top = 81
+          Width = 336
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 3
+        end
+        object ePatternPUB: TEdit
+          Left = 0
+          Height = 23
+          Top = 81
+          Width = 336
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 4
+          Visible = False
+        end
+      end
+      object chkCharCase: TCheckBox
+        Left = 12
+        Height = 19
+        Top = 162
+        Width = 106
+        Caption = 'Ignore char case'
+        Checked = True
+        State = cbChecked
+        TabOrder = 2
+      end
+      object pnlBottom: TPanel
+        Left = 0
+        Height = 138
+        Top = 269
+        Width = 543
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 138
+        ClientWidth = 543
+        TabOrder = 3
+        object lblSect4: TLabel
+          Left = 12
+          Height = 18
+          Top = 22
+          Width = 137
+          Caption = '4.- Select batch action'
+          Font.Height = -13
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblSect5: TLabel
+          Left = 12
+          Height = 18
+          Top = 72
+          Width = 143
+          Caption = '5.- Shrink all - yeah - ;)'
+          Font.Height = -13
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label1: TLabel
+          Cursor = crHandPoint
+          Left = 0
+          Height = 16
+          Top = 122
+          Width = 543
+          Align = alBottom
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'developed by juanmime. http://www.clandragonrojo.es'
+          Font.Color = clRed
+          Layout = tlBottom
+          ParentColor = False
+          ParentFont = False
+          OnClick = Label1Click
+        end
+        object pgrBar: TProgressBar
+          Left = 12
+          Height = 20
+          Top = 98
+          Width = 334
+          TabOrder = 1
+        end
+        object btnShrink: TBitBtn
+          Left = 258
+          Height = 24
+          Top = 72
+          Width = 88
+          Caption = 'Shrink'
+          Enabled = False
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000006A6A6A0D5E5E5E926D6D6DE04848
+            489A000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000009F9F9FAAECECECFFA6A6A6FF5555
+            55D2000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000AFAFAFF1E9E9E9FF9E9E9EFF5858
+            58DE000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000AFAFAFF9D1D1D1FF919191FF5A5A
+            5AEA000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000006B6B6B28909090FEB1B1B1FF888888FF5B5B
+            5BF95A5A5A210000000000000000000000000000000000000000000000000000
+            000000000000000000008A8A8A0DA1A1A1D5F5F5F5FFD7D7D7FFACACACFF7373
+            73FF565656CF5E5E5E0A00000000000000000000000000000000000000000000
+            00000000000000000001999999ADF6F6F6FFDCDCDCFFD0D0D0FFB1B1B1FF8484
+            84FF646464FF595959A600000000000000000000000000000000000000000000
+            0000000000009C9C9C7AF7F7F7FFEEEEEEFFDBDBDBFFD4D4D4FFB9B9B9FF9191
+            91FF727272FF5C5C5CFE5E5E5E73000000000000000000000000000000000000
+            0000A3A3A348EAEAEAFCE3E3E3FFB7B7B7FFA1A1A1FF9E9E9EFF989898FF8686
+            86FF666666FF515151FF4A4A4AFB55555544000000000000000000000000BABA
+            BA22A1A1A1ED6B6B6BFF575757FF6D6D6DFF979797FFC3C3C3FFE0E0E0FFF6F6
+            F6FFFFFFFFFFFAFAFAFFAEAEAEFF515151EB4242422000000000000000008E8E
+            8EBE303030FF4D4D4DFF696969FF858585FFA2A2A2FFC3C3C3FFD4D4D4FFE5E5
+            E5FFF2F2F2FFFFFFFFFFFFFFFFFFFFFFFFFF6B6B6BC700000000000000008585
+            85D43C3C3CFF5E5E5EFF777777FF8E8E8EFFA7A7A7FFC5C5C5FFD3D3D3FFE1E1
+            E1FFECECECFFF8F8F8FFFFFFFFFFFFFFFFFF8A8A8AE10000000000000000E6E6
+            E62EACACACD47A7A7AFF787878FF939393FFADADADFFC9C9C9FFD7D7D7FFE7E7
+            E7FFF5F5F5FFFFFFFFFFF2F2F2FF9C9C9CDA3838383600000000000000000000
+            000082828202DADADA45B6B6B68FA7A7A7C0A9A9A9DFAEAEAEEEACACACEEA9A9
+            A9E09A9A9AC27575759248484849555555030000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = btnShrinkClick
+          TabOrder = 0
+        end
+        object cbAction: TComboBox
+          Left = 216
+          Height = 23
+          Top = 22
+          Width = 132
+          ItemHeight = 15
+          OnChange = cbActionChange
+          Style = csDropDownList
+          TabOrder = 2
+        end
+        object eCommand: TEdit
+          Left = 12
+          Height = 23
+          Hint = 'Ej: calc.exe <file>'
+          Top = 44
+          Width = 293
+          Align = alCustom
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 3
+          Visible = False
+        end
+        object btnFileReplace: TBitBtn
+          Left = 308
+          Height = 23
+          Top = 45
+          Width = 40
+          Caption = '...'
+          OnClick = btnFileReplaceClick
+          TabOrder = 4
+          Visible = False
+        end
+        object eReplaceFile: TEdit
+          Left = 12
+          Height = 23
+          Top = 45
+          Width = 292
+          Align = alCustom
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 5
+          Visible = False
+        end
+      end
+      object chkIncludePath: TCheckBox
+        Left = 20
+        Height = 19
+        Top = 274
+        Width = 138
+        Caption = 'Search also in file path'
+        TabOrder = 4
+      end
+      object chkUpdateFiles: TCheckBox
+        Left = 220
+        Height = 19
+        Top = 274
+        Width = 149
+        Caption = 'Search also update PUPs'
+        Checked = True
+        OnChange = chkUpdateFilesChange
+        State = cbChecked
+        TabOrder = 5
+      end
+      object chkFiles: TListView
+        Left = 12
+        Height = 91
+        Top = 178
+        Width = 335
+        Checkboxes = True
+        Columns = <        
+          item
+            Caption = '*'
+            Width = 24
+          end        
+          item
+            AutoSize = True
+            Caption = 'File'
+            Width = 150
+          end        
+          item
+            Caption = 'Size'
+            Width = 80
+          end>
+        PopupMenu = popMnu2
+        RowSelect = True
+        SortType = stBoth
+        TabOrder = 6
+        ViewStyle = vsReport
+        OnClick = chkFilesClick
+        OnColumnClick = chkFilesColumnClick
+        OnCompare = chkFilesCompare
+        OnMouseUp = chkFilesMouseUp
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = '2.- Vídeos'
+      ClientHeight = 407
+      ClientWidth = 543
+      ImageIndex = 1
+      object lblFound1: TLabel
+        Left = 108
+        Height = 18
+        Top = 7
+        Width = 209
+        AutoSize = False
+        Caption = '0 files found'
+        Font.Color = clGreen
+        Font.Height = -13
+        ParentColor = False
+        ParentFont = False
+      end
+      object lblNProc: TLabel
+        Left = 257
+        Height = 18
+        Top = 8
+        Width = 44
+        Caption = 'N. Proc'
+        Font.Height = -13
+        ParentColor = False
+        ParentFont = False
+      end
+      object lblAudioTrack: TLabel
+        Left = 244
+        Height = 16
+        Top = 268
+        Width = 70
+        Caption = 'Audio Tracks'
+        ParentColor = False
+      end
+      object lblVideoAction: TLabel
+        Left = 12
+        Height = 16
+        Top = 268
+        Width = 38
+        Caption = 'Acción'
+        ParentColor = False
+      end
+      object chkVideoFiles: TListView
+        Left = 12
+        Height = 224
+        Top = 34
+        Width = 424
+        Checkboxes = True
+        Columns = <        
+          item
+            Caption = '*'
+            Width = 24
+          end        
+          item
+            AutoSize = True
+            Caption = 'File'
+            Width = 150
+          end        
+          item
+            Caption = 'Size'
+            Width = 80
+          end        
+          item
+            Caption = 'Date'
+            Width = 80
+          end>
+        PopupMenu = popMnu
+        RowSelect = True
+        SortType = stBoth
+        TabOrder = 0
+        ViewStyle = vsReport
+        OnColumnClick = chkFilesColumnClick
+        OnCompare = chkFilesCompare
+        OnMouseUp = chkVideoFilesMouseUp
+      end
+      object btnVideoSearch: TBitBtn
+        Left = 12
+        Height = 23
+        Top = 7
+        Width = 88
+        Caption = 'Search'
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF000E5A3E320F5B3FFF126244FF0E5A3E5AFFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF0015614436176346FF29855FFF449C77FF3D7F65FFFFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF001E6A4C38216D4FFF368F6BFF52A583FF98C5B2FF256F52FFFFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF002B7859FF459A79FF63B092FF9EC9B8FF357E61FF27745543FFFFFF00FFFF
+          FF00FFFFFF0050505048505050B1505050E7505050E7505050B1505050489898
+          98FF56A688FF74BAA0FFA3CDBDFF3D8768FF317F5E41FFFFFF00FFFFFF005656
+          561B565656967F7F7FFFC9C9C9FFECECECFFECECECFFC9C9C9FF7F7F7FFF5F5F
+          5FEA606060D0AAD2C2FF45906FFF3B8A673DFFFFFF00FFFFFF00FFFFFF005C5C
+          5C96AEAEAEFFFAFAFAFFF8F8F8FFF4F4F4FFF4F4F4FFF8F8F8FFFAFAFAFFA9A9
+          A9FF5F5F5FE9989898FFFFFFFF00FFFFFF00FFFFFF00FFFFFF006363635A9393
+          93FFF8F8F8FFEEEEEEFFEDEDEDFFEDEDEDFFEDEDEDFFEDEDEDFFEFEFEFFFF6F6
+          F6FF888888FF6363635AFFFFFF00FFFFFF00FFFFFF00FFFFFF006B6B6BC3D6D6
+          D6FFEEEEEEFFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFE6E6E6FFF0F0
+          F0FFD6D6D6FF6B6B6BC3FFFFFF00FFFFFF00FFFFFF00FFFFFF00737373F9F1F1
+          F1FFE0E0E0FFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFE1E1
+          E1FFEFEFEFFF737373F3FFFFFF00FFFFFF00FFFFFF00FFFFFF007B7B7BF9F1F1
+          F1FFDCDCDCFFD7D7D7FFD7D7D7FFD7D7D7FFD7D7D7FFD7D7D7FFD7D7D7FFDDDD
+          DDFFEDEDEDFF7B7B7BF0FFFFFF00FFFFFF00FFFFFF00FFFFFF00838383C3DBDB
+          DBFFE4E4E4FFD0D0D0FFCFCFCFFFCFCFCFFFCFCFCFFFCFCFCFFFD1D1D1FFE8E8
+          E8FFDCDCDCFF838383C3FFFFFF00FFFFFF00FFFFFF00FFFFFF008A8A8A5AB1B1
+          B1FFF3F3F3FFD6D6D6FFCCCCCCFFCACACAFFCACACAFFCCCCCCFFD8D8D8FFF3F3
+          F3FFA6A6A6FF8A8A8A5AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009191
+          9196CCCCCCFFF4F4F4FFE6E6E6FFD9D9D9FFD9D9D9FFE6E6E6FFF4F4F4FFC7C7
+          C7FF91919196FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009797
+          972797979796B8B8B8FFDFDFDFFFF1F1F1FFF1F1F1FFDFDFDFFFB8B8B8FF9797
+          97969797971BFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF009D9D9D549D9D9DBA9D9D9DED9D9D9DED9D9D9DBA9D9D9D54FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+        }
+        OnClick = btnVideoSearchClick
+        TabOrder = 1
+      end
+      object pnlConfig: TScrollBox
+        Left = 0
+        Height = 92
+        Top = 315
+        Width = 543
+        HorzScrollBar.Page = 444
+        HorzScrollBar.Range = 426
+        HorzScrollBar.Visible = False
+        VertScrollBar.Page = 142
+        VertScrollBar.Range = 127
+        VertScrollBar.Visible = False
+        Align = alBottom
+        AutoScroll = False
+        BorderStyle = bsNone
+        ClientHeight = 92
+        ClientWidth = 543
+        TabOrder = 2
+        object lblSect6: TLabel
+          Left = 10
+          Height = 18
+          Top = 6
+          Width = 96
+          Caption = 'BIK Reconversor'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblSect7: TLabel
+          Left = 10
+          Height = 18
+          Top = 46
+          Width = 105
+          Caption = 'M2V Reconversor'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblSect8: TLabel
+          Left = 10
+          Height = 18
+          Top = 90
+          Width = 100
+          Caption = 'VP6 Reconversor'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+          Visible = False
+        end
+        object eBik: TEdit
+          Left = 10
+          Height = 23
+          Hint = 'Ej: c:\bikencode.exe -i <ifile> -o <ofile>'
+          Top = 20
+          Width = 368
+          Align = alCustom
+          OnClick = eBikEnter
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 0
+          Text = 'tools\bink.exe <ifile> <ofile> /d50 /m3.0 /l4 /p8 /#'
+        end
+        object eM2V: TEdit
+          Tag = 1
+          Left = 10
+          Height = 23
+          Hint = 'Ej: c:\rejit.exe -i <ifile> -o <ofile>'
+          Top = 62
+          Width = 368
+          Align = alCustom
+          OnClick = eBikEnter
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 1
+          Text = 'tools\rejig.exe -quiet -auto -close -level 40 -o <ofile> -i <ifile>'
+        end
+        object eVP6: TEdit
+          Tag = 2
+          Left = 10
+          Height = 23
+          Hint = 'Ej: c:\mencoder.exe -i <ifile> -o <ofile>'
+          Top = 106
+          Width = 366
+          Align = alCustom
+          OnClick = eBikEnter
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 2
+          Text = 'tools\mencoder.exe <file> -o <ofile> -of lavf -lavfopts format=flv -ovc vfw -xvfwopts codec=tools\codecs\vp6vfw.dll:compdata=tools\firstpass.mcf -oac copy'
+          Visible = False
+        end
+        object btnCfg1: TBitBtn
+          Left = 386
+          Height = 23
+          Top = 20
+          Width = 40
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000666666006666
+            66BF666666FF666666FF66666600666666006666660066666600666666006666
+            6600666666006666660066666600666666006666660066666600686868BF9999
+            99FFAAAAAAFF999999FF666666FFAAAAAA00AAAAAA00AAAAAA00AAAAAA00AAAA
+            AA00AAAAAA00AAAAAA00AAAAAA00AAAAAA00AAAAAA00686868006B6B6BFFC5C5
+            C5FFACACACFFACACACFF9A9A9AFF666666FFFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006B6B6B006E6E6EFFDDDD
+            DDFFB0B0B0FFB0B0B0FFB0B0B0FF9D9D9DFF666666FFFFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006E6E6E00717171007171
+            71FFDDDDDDFFB3B3B3FFB3B3B3FFB3B3B3FFA0A0A0FF666666FFFFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007171710075757500FFFF
+            FF00757575FFDDDDDDFFB8B8B8FFB8B8B8FFB8B8B8FFA3A3A3FF666666FFFFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007575750079797900FFFF
+            FF00FFFFFF00797979FFDDDDDDFFBCBCBCFFBCBCBCFFBCBCBCFFA6A6A6FF6666
+            66FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00797979007D7D7D00FFFF
+            FF00FFFFFF00FFFFFF007D7D7DFFDDDDDDFFC1C1C1FFC1C1C1FFC1C1C1FFAAAA
+            AAFF666666FF666666FF666666FF666666BF666666407D7D7D0082828200FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00828282FFDDDDDDFFC6C6C6FFC6C6C6FFC6C6
+            C6FFC6C6C6FFC6C6C6FFC6C6C6FFB5B5B5FF666666FF8282824086868600FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00DDDDDD00868686FFDDDDDDFFCBCBCBFFCBCB
+            CBFFD4D4D4FFDDDDDDFFDDDDDDFFCBCBCBFFBABABAFF767676FF8A8A8A00FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00DDDDDD00DDDDDD008A8A8AFFDDDDDDFFCFCF
+            CFFFB4B4B4FF999999FF999999FFDDDDDDFFCFCFCFFF8A8A8AFF8E8E8E00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008E8E8EFFDDDDDDFFD4D4
+            D4FF8F8F8FFF8F8F8F408E8E8E408E8E8EFFDDDDDDFF8E8E8EFF91919100FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00919191FFDDDDDDFFD7D7
+            D7FF808080FF80808040FFFFFF0091919140919191FF9191918094949400FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00949494BFDDDDDDFFDBDB
+            DBFFC0C0C0FF707070FF70707040FFFFFF00FFFFFF009494940097979700FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0097979740979797FFDDDD
+            DDFFDDDDDDFFDDDDDDFF666666FFFFFFFF00FFFFFF0097979700999999009999
+            9900999999009999990099999900999999009999990099999900999999409999
+            99FF999999FF999999FF99999980999999009999990099999900
+          }
+          OnClick = btnCfg1Click
+          TabOrder = 3
+        end
+        object btnCfg2: TBitBtn
+          Left = 386
+          Height = 23
+          Top = 62
+          Width = 40
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000666666006666
+            66BF666666FF666666FF66666600666666006666660066666600666666006666
+            6600666666006666660066666600666666006666660066666600686868BF9999
+            99FFAAAAAAFF999999FF666666FFAAAAAA00AAAAAA00AAAAAA00AAAAAA00AAAA
+            AA00AAAAAA00AAAAAA00AAAAAA00AAAAAA00AAAAAA00686868006B6B6BFFC5C5
+            C5FFACACACFFACACACFF9A9A9AFF666666FFFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006B6B6B006E6E6EFFDDDD
+            DDFFB0B0B0FFB0B0B0FFB0B0B0FF9D9D9DFF666666FFFFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006E6E6E00717171007171
+            71FFDDDDDDFFB3B3B3FFB3B3B3FFB3B3B3FFA0A0A0FF666666FFFFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007171710075757500FFFF
+            FF00757575FFDDDDDDFFB8B8B8FFB8B8B8FFB8B8B8FFA3A3A3FF666666FFFFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007575750079797900FFFF
+            FF00FFFFFF00797979FFDDDDDDFFBCBCBCFFBCBCBCFFBCBCBCFFA6A6A6FF6666
+            66FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00797979007D7D7D00FFFF
+            FF00FFFFFF00FFFFFF007D7D7DFFDDDDDDFFC1C1C1FFC1C1C1FFC1C1C1FFAAAA
+            AAFF666666FF666666FF666666FF666666BF666666407D7D7D0082828200FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00828282FFDDDDDDFFC6C6C6FFC6C6C6FFC6C6
+            C6FFC6C6C6FFC6C6C6FFC6C6C6FFB5B5B5FF666666FF8282824086868600FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00DDDDDD00868686FFDDDDDDFFCBCBCBFFCBCB
+            CBFFD4D4D4FFDDDDDDFFDDDDDDFFCBCBCBFFBABABAFF767676FF8A8A8A00FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00DDDDDD00DDDDDD008A8A8AFFDDDDDDFFCFCF
+            CFFFB4B4B4FF999999FF999999FFDDDDDDFFCFCFCFFF8A8A8AFF8E8E8E00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008E8E8EFFDDDDDDFFD4D4
+            D4FF8F8F8FFF8F8F8F408E8E8E408E8E8EFFDDDDDDFF8E8E8EFF91919100FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00919191FFDDDDDDFFD7D7
+            D7FF808080FF80808040FFFFFF0091919140919191FF9191918094949400FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00949494BFDDDDDDFFDBDB
+            DBFFC0C0C0FF707070FF70707040FFFFFF00FFFFFF009494940097979700FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0097979740979797FFDDDD
+            DDFFDDDDDDFFDDDDDDFF666666FFFFFFFF00FFFFFF0097979700999999009999
+            9900999999009999990099999900999999009999990099999900999999409999
+            99FF999999FF999999FF99999980999999009999990099999900
+          }
+          OnClick = btnCfg2Click
+          TabOrder = 4
+        end
+        object btnCfg3: TBitBtn
+          Left = 386
+          Height = 23
+          Top = 104
+          Width = 40
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000666666006666
+            66BF666666FF666666FF66666600666666006666660066666600666666006666
+            6600666666006666660066666600666666006666660066666600686868BF9999
+            99FFAAAAAAFF999999FF666666FFAAAAAA00AAAAAA00AAAAAA00AAAAAA00AAAA
+            AA00AAAAAA00AAAAAA00AAAAAA00AAAAAA00AAAAAA00686868006B6B6BFFC5C5
+            C5FFACACACFFACACACFF9A9A9AFF666666FFFFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006B6B6B006E6E6EFFDDDD
+            DDFFB0B0B0FFB0B0B0FFB0B0B0FF9D9D9DFF666666FFFFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006E6E6E00717171007171
+            71FFDDDDDDFFB3B3B3FFB3B3B3FFB3B3B3FFA0A0A0FF666666FFFFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007171710075757500FFFF
+            FF00757575FFDDDDDDFFB8B8B8FFB8B8B8FFB8B8B8FFA3A3A3FF666666FFFFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007575750079797900FFFF
+            FF00FFFFFF00797979FFDDDDDDFFBCBCBCFFBCBCBCFFBCBCBCFFA6A6A6FF6666
+            66FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00797979007D7D7D00FFFF
+            FF00FFFFFF00FFFFFF007D7D7DFFDDDDDDFFC1C1C1FFC1C1C1FFC1C1C1FFAAAA
+            AAFF666666FF666666FF666666FF666666BF666666407D7D7D0082828200FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00828282FFDDDDDDFFC6C6C6FFC6C6C6FFC6C6
+            C6FFC6C6C6FFC6C6C6FFC6C6C6FFB5B5B5FF666666FF8282824086868600FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00DDDDDD00868686FFDDDDDDFFCBCBCBFFCBCB
+            CBFFD4D4D4FFDDDDDDFFDDDDDDFFCBCBCBFFBABABAFF767676FF8A8A8A00FFFF
+            FF00FFFFFF00FFFFFF00DDDDDD00DDDDDD00DDDDDD008A8A8AFFDDDDDDFFCFCF
+            CFFFB4B4B4FF999999FF999999FFDDDDDDFFCFCFCFFF8A8A8AFF8E8E8E00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008E8E8EFFDDDDDDFFD4D4
+            D4FF8F8F8FFF8F8F8F408E8E8E408E8E8EFFDDDDDDFF8E8E8EFF91919100FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00919191FFDDDDDDFFD7D7
+            D7FF808080FF80808040FFFFFF0091919140919191FF9191918094949400FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00949494BFDDDDDDFFDBDB
+            DBFFC0C0C0FF707070FF70707040FFFFFF00FFFFFF009494940097979700FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0097979740979797FFDDDD
+            DDFFDDDDDDFFDDDDDDFF666666FFFFFFFF00FFFFFF0097979700999999009999
+            9900999999009999990099999900999999009999990099999900999999409999
+            99FF999999FF999999FF99999980999999009999990099999900
+          }
+          OnClick = btnFileReplaceClick
+          TabOrder = 5
+          Visible = False
+        end
+      end
+      object btnRecode: TBitBtn
+        Left = 348
+        Height = 24
+        Top = 6
+        Width = 88
+        Caption = 'Recode'
+        Enabled = False
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          1800000000000003000064000000640000000000000000000000FFFFFFFFFFFF
+          FFFFFFF9F9F9F5F5F5A39999945A5A864E4E958F8FD6D6D6EEEEEEF9F9F9F9F9
+          F9FBFBFBFFFFFFFFFFFFFFFFFFFFFFFFDDDCDC9990909E9696C49999D2AAAAA9
+          70707B4242989292CDCDCDD1D1D1D0D0D0DADADAF2F2F2FFFFFFFFFFFFEAEAEA
+          846060905858D7BCBCFBEEEEDEC3C3BB8A8A995B5B773D3D885D5D774C4C7043
+          43979292DADADAFAFAFAEEEEEE9F8484D9AEAED8B5B5E8CFCFE8D4D4EAD8D8D4
+          B2B2BB8B8BBC8C8CD3ABABC79797A566666E4040D5D5D5FAFAFAAB9292CFA1A1
+          D8B7B7D6B5B5DABCBCE5C8C8E9D5D5EAD7D7E7D2D2F7EFEFF7EEEED4B1B1C798
+          98845D5DE1E1E1FCFCFCB2A9A9B68181C99F9FCFA9A9CCA7A7AA8383E1BBBBE9
+          D1D1EEDEDEF2E6E6FBF6F6FAF3F3B28383867B7BD5D5D5F0F0F0C4C0C0AC7171
+          C59898CAA0A0935C5CA19C9CA59393B79494EDD3D3E7D3D3F2E6E6F3E7E7B17C
+          7C784141979191D6D6D6977272AA7171BC8E8ECDA6A6824545ACACACFFFFFFCF
+          CCCCBD9494ECD2D2EBDADAE4CDCDBB8A8A995B5B7C4343979090975555A36A6A
+          BE9191D7B5B5925656857A7ACFCFCFFDFDFDCDCACAB99696E5CACAE7D1D1D6B4
+          B4BB8B8BAA7171844C4C998383965555A77272E0C6C6B88383874B4B897F7FC9
+          C9C9F7F7F79C8B8BDCB2B2E4CCCCE7D1D1DEC3C3D1ABAB905555FFFFFF957F7F
+          8C4F4FCCA8A8DABBBBB17878834A4A734949A29F9F8B7373D7ADADDBBCBCDFC5
+          C5EEDDDDD3A8A8958686FFFFFFFFFFFF7A4F4F915555D5B8B8DBBEBEBB8989A4
+          68688B5050B68B8BD2AEAED1ADADDBBDBDF0D7D7AF8A8AD4D2D2FFFFFFFFFFFF
+          7E5454843F3F8B5050C59E9EDFC4C4DCC0C0CFA9A9C29595C69A9ACDA6A6D2AA
+          AA9F7474C4C2C2FFFFFFFFFFFFFFFFFFD6D4D4875E5E8355558441419A6363A6
+          7272B17E7EB98787BC8C8CD2AFAFD7ACAC7C5A5AF7F7F7FEFEFEFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFF9C80808C4A4A9559599B5D5DA66969B37E7EC898989E83
+          83E7E7E7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9983838A
+          4E4EB2ABABC3BFBF9B6F6FAC8F8FEBEBEBFFFFFFFFFFFFFFFFFF
+        }
+        OnClick = btnRecodeClick
+        TabOrder = 3
+      end
+      object pgrBarVideo: TProgressBar
+        Left = 12
+        Height = 20
+        Top = 297
+        Width = 424
+        TabOrder = 4
+      end
+      object btnStopEncode: TBitBtn
+        Left = 356
+        Height = 30
+        Top = 0
+        Width = 75
+        Caption = 'Stop'
+        Kind = bkAbort
+        ModalResult = 3
+        OnClick = btnStopEncodeClick
+        TabOrder = 5
+        Visible = False
+      end
+      object eNProc: TEdit
+        Left = 300
+        Height = 23
+        Top = 7
+        Width = 29
+        ReadOnly = True
+        TabOrder = 6
+        Text = '1'
+      end
+      object btnUD: TUpDown
+        Left = 329
+        Height = 21
+        Top = 7
+        Width = 17
+        Min = 1
+        Max = 8
+        Position = 1
+        TabOrder = 7
+        Wrap = False
+        OnClick = btnUDClick
+      end
+      object eAudioTrack: TEdit
+        Left = 340
+        Height = 23
+        Hint = 'Select audio tracks'
+        Top = 265
+        Width = 91
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 8
+        Text = '0'
+      end
+      object cbVideoAction: TComboBox
+        Left = 60
+        Height = 23
+        Top = 265
+        Width = 172
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'Recodificar'
+          'Quitar pistas de audio (BIK)'
+        )
+        OnChange = cbVideoActionChange
+        Style = csDropDownList
+        TabOrder = 9
+        Text = 'Recodificar'
+      end
+    end
+  end
+  object fDirectory: TSelectDirectoryDialog
+    left = 152
+    top = 24
+  end
+  object MainMenu1: TMainMenu
+    left = 8
+    top = 24
+    object mnuFile: TMenuItem
+      Caption = 'File'
+      object mnuOpen: TMenuItem
+        Caption = 'Open game pattern'
+        OnClick = mnuOpenClick
+      end
+      object mnuSave: TMenuItem
+        Caption = 'Save game pattern'
+        OnClick = mnuSaveClick
+      end
+    end
+    object mnuOptions: TMenuItem
+      Caption = 'Options'
+      OnClick = mnuOptionsClick
+    end
+    object mnuAbout: TMenuItem
+      Caption = 'About ...'
+      OnClick = mnuAboutClick
+    end
+  end
+  object openDlg: TOpenDialog
+    Filter = 'Pattern Files (*.ptn)|*.ptn'
+    left = 184
+    top = 24
+  end
+  object saveDlg: TSaveDialog
+    Filter = 'Pattern Files (*.ptn)|*.ptn'
+    left = 216
+    top = 24
+  end
+  object openDlg2: TOpenDialog
+    Filter = '*.*|*.*'
+    left = 120
+    top = 24
+  end
+  object popMnu: TPopupMenu
+    left = 72
+    top = 24
+    object mnuFPath: TMenuItem
+      Caption = 'Copiar ruta del fichero'
+      OnClick = mnuFPathClick
+    end
+    object mnuSaveFiles: TMenuItem
+      Caption = 'Guardar listado'
+      OnClick = mnuSaveFilesClick
+    end
+    object mnuLoadFiles: TMenuItem
+      Caption = 'Cargar listado'
+      OnClick = mnuLoadFilesClick
+    end
+    object mnuPlay: TMenuItem
+      Caption = 'Ver'
+      OnClick = mnuPlayClick
+    end
+    object mnuVideoInfo: TMenuItem
+      Caption = 'Video Info'
+      OnClick = mnuVideoInfoClick
+    end
+    object mnuAudioTracks: TMenuItem
+      Caption = 'Audio Tracks'
+      OnClick = mnuAudioTracksClick
+    end
+    object MenuItem1: TMenuItem
+      Caption = '-'
+    end
+    object mnuSelect2: TMenuItem
+      Caption = 'Seleccionar'
+      object mnuAll2: TMenuItem
+        Caption = 'Todo'
+        OnClick = mnuAll2Click
+      end
+      object mnuNothing2: TMenuItem
+        Caption = 'Nada'
+        OnClick = mnuNothing2Click
+      end
+      object mnuInvert2: TMenuItem
+        Caption = 'Invertir'
+        OnClick = mnuInvert2Click
+      end
+    end
+  end
+  object saveDlg1: TSaveDialog
+    Filter = ' (*.txt)|*.txt'
+    left = 384
+    top = 32
+  end
+  object openDlg1: TOpenDialog
+    Filter = '(*.txt)|*.txt'
+    left = 416
+    top = 32
+  end
+  object ImageList1: TImageList
+    left = 373
+    top = 174
+    Bitmap = {
+      4C69020000001000000010000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF003D61861A2F6BA8B12774C4E12576C3E02B6DABB53465889D1D58
+      87FF1D5887B31D58874AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000B7AE9FE51A2FAFFCBE4FEFFACD4FEFF3193FCFF2E7FD7FFEFF7
+      FBFF3684BBFF1D5887B3FFFFFF00375D8602078AF5AE0589F5FA0488F5FF0485
+      F5FF0383F5FF93C6FCFFD7EAFFFFE7F2FFFFCDE4FFFFC7E1FFFFA0B4C0FF86BC
+      E2FF2E72A4FF1D588762FFFFFF00335F8C0B0987F7C39BCBFFFF9FCDFFFF9BCA
+      FFFFB8DAFFFFC8E2FFFFB6D9FFFFD1E7FFFF9FCDFFFF95C8FFFF356E97FF8FC1
+      E4FF215F8FFF1D58871AFFFFFF002D679D260C81F9D29BCBFFFF51A4FFFF50A3
+      FFFF81BDFFFF9FCCFFFFC4E0FFFFC5E1FFFF9DCCFFFF70AAF0F93579ACFF6EAF
+      DBFF1D5887FFFFFFFF00FFFFFF00246FB1501785FBE29DCBFFFF54A5FFFF57A6
+      FFFF82BEFFFFA5CFFFFFCDE5FFFFB7D9FFFF9ACAFFFF93B0D7F0428CC0FF7DB7
+      DFFF1D5887FFFFFFFF00FFFFFF00187ACD858FC4FEF17DBAFFFF5CAAFFFF5EAB
+      FFFF85BFFFFFAAD3FFFFDFEEFFFFBDDCFFFFB5D8FFFF9DB2CCFF56A2D6FF4692
+      C7FF1D5887D4FFFFFF00FFFFFF000C86EBB29ACAFFFC50A3FFFF499EFFFF7CB9
+      FFFFA9D2FFFFC0DEFFFF9FCCFCFD549FF2F64D9FF9FB79A5D0FF56A2D6FF3A7E
+      B0FF1D588783FFFFFF00FFFFFF000B8AF7C994C7FEFFA3CEFFFFA2CEFFFFB2D5
+      FEFF3594F9FF0C7DECFE4B8BCECD8FC3FB5860A1E59E161D32FF539ED4FF2B6A
+      9AFF1D58873EFFFFFF00FFFFFF00296EAB9B167DD5F50A82ECFE0A81EAFE1277
+      D8F9286AAAC6FFFFFF00FFFFFF00FFFFFF001D5887432C6B9CFF56A2D6FF1D58
+      87FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF001D5887893C80B1FF56A2D6FF1D58
+      87FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF001D5887D84D97CAFF56A2D6FF1D58
+      87FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF001D5887FF56A2D6FF458CBEFF1D58
+      87B3FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF001D5887FF56A2D6FF387BACFF1D58
+      8778FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF001D5887961D5887FF1D5887961D58
+      870FFFFFFF00FFFFFF00FFFFFF00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFD6D0C9FFD6D0C9FFD6D0C9FFD6D0C9FFD6D0C9FFADA29BFFFBFB
+      FB00FBFBFB00FBFBFB00FBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFFCFB
+      FBFFB1ABA4FFF8F7F6FFF3F1EFFFF0EDEBFFE7E3DFFFE9E6E2FFD6CEC9FFADA2
+      9BFFFBFBFB00FBFBFB00FBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFF8F7F6FFF4F2F0FFF1EFEDFFEAE7E3FFE9E6E2FFD6CEC9FFD8D2
+      CBFFADA29BFFFBFBFB00FBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFFDFD
+      FCFFB1ABA4FFF8F7F6FFF4F2F0FFF2F0EEFFEBE8E5FFE9E6E2FFADA29BFFADA2
+      9BFFADA29BFFADA29BFFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFF8F7F6FFF5F4F2FFF3F1EFFFEDEAE7FFE9E6E2FFE5E1DDFFB1AB
+      A4FFFBFBFB00B1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFFCFB
+      FBFFB1ABA4FFF8F7F6FFF6F4F3FFF4F2F0FFEEECE9FFEBE8E5FFDDD8D2FFB1AB
+      A4FFB1ABA4FFB1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFF8F7F6FFF6F4F3FFF4F3F1FFEEECE9FFE9E6E2FFDAD4CEFFB1AB
+      A4FFFBFBFB00B1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFFAF9
+      F9FFB1ABA4FFF6F5F3FFF3F1EFFFF1EFECFFE5E1DDFFE2DED9FFDFDAD4FFB1AB
+      A4FFB1ABA4FFB1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFF5F4F2FFF1EFEDFFEBE8E5FFE5E1DDFFE4E0DBFFE2DDD8FFB1AB
+      A4FFFBFBFB00B1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFF8F7
+      F6FFB1ABA4FFF3F1EFFFECE9E6FFEBE8E4FFE8E5E1FFE7E3DFFFE5E1DCFFB1AB
+      A4FFB1ABA4FFB1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFEFEDEAFFEDEAE7FFEBE8E5FFE9E6E2FFE8E5E1FFE5E1DDFFB1AB
+      A4FFFBFBFB00B1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFF9F8
+      F7FFB1ABA4FFEFEDEAFFEDEAE7FFEBE8E5FFE9E6E2FFE8E5E1FFE5E1DDFFB1AB
+      A4FFB1ABA4FFB1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFEEECE9FFEDEAE7FFECE9E6FFEAE7E3FFE8E5E1FFE6E2DEFFB1AB
+      A4FFFBFBFB00B1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFF7F6
+      F4FFB1ABA4FFEEECE9FFECE9E6FFEBE8E5FFEAE7E3FFE8E5E1FFE5E1DDFFB1AB
+      A4FFB1ABA4FFB1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFB1AB
+      A4FFB1ABA4FFEEECE9FFEDEAE7FFEBE8E5FFE9E6E2FFE8E5E1FFE5E1DDFFB1AB
+      A4FFFBFBFB00B1ABA4FFFBFBFB00FBFBFB00FBFBFB00FBFBFB00B1ABA4FFFBFB
+      FB00B1ABA4FFB1A89EFFB1A89EFFB1A89EFFB1A89EFFB1A89EFFB1A89EFFB1AB
+      A4FFB1ABA4FFB1ABA4FFFBFBFB00
+    }
+  end
+  object popMnu2: TPopupMenu
+    left = 40
+    top = 24
+    object mnuSelect1: TMenuItem
+      Caption = 'Seleccionar'
+      object mnuAll1: TMenuItem
+        Caption = 'Todo'
+        OnClick = mnuAll1Click
+      end
+      object mnuNothing1: TMenuItem
+        Caption = 'Nada'
+        OnClick = mnuNothing1Click
+      end
+      object mnuInvert1: TMenuItem
+        Caption = 'Invertir'
+        OnClick = mnuInvert1Click
+      end
+    end
+  end
+end

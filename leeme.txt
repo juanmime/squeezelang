@@ -1,0 +1,107 @@
+Squeezelang v.0.2.1. (alias shuar)
+Date: 2011-02-20
+Developed by juanmime
+http://www.twitter.com/juanmime
+Member of: http://www.clandragonrojo.es
+Licence: Free.
+
+¿ Qué es Squeezelang ?
+-------------------------
+Si tienes copias de seguridad en disco duro de tus juegos originales de PS3
+rápidamente verás lo rápido que se llena con dos o tres juegos ... y seguro
+que te habrás preguntado alguna vez ¿ son necesarios los 3000 o 4000 ficheros
+que vienen en el juego ?
+
+La realidad es que no todos son necesarios. Muchos son para dar soporte
+multi-idioma a los juegos, pero como la mayoría de los jugadores juegan en
+un sólo idioma ¿ para qué quieres el resto de los idiomas ?
+
+¿ Para qué sirve ? ¿ qué hace Squeezlang ?
+--------------------------------------------
+Squeezelang pretende ayudarte a localizar los ficheros que representan a los
+idiomas del juego y te permite "menguarlos" de forma rápida y fácil para así
+reducir espacio, y salvar el planeta ("menor tamaño", "menos emisiones de 
+calor", "menos emisiones de CO2")
+
+¿ Cómo lo hace ?
+------------------
+En esencia, squeezelang es un sencillo programa para hacer cosas con unos
+ficheros seleccionados de forma masiva. Actualmente permite:
+
+*) Reducir: Mantiene el fichero original vaciando su contenido.
+*) Borrar: Eliminar el fichero
+*) Ejecutar: Permite ejecutar un programa externo pasándole como parámetro
+el archivo seleccionado.
+*) Sustituir: Reemplaza el fichero original con el contenido de otro existente.
+
+La opción por defecto es reducir. Si borras los archivos existen juegos que 
+detectan su ausencia y fallan.
+
+La opción ejecutar es útil, por ejemplo, para recodificar vídeos a inferior calidad 
+o resolución con un programa externo (con lo cual se reduce tamaño).
+
+La opción sustituir, es útil cuando tenemos vídeos que queremos reemplazarlos
+por otros de menor duración, en caso de que no querramos o sepamos 
+recodificarlos.
+
+¿ Sirve para todos los juegos ?
+-------------------------------
+No. Squeezelang, busca ficheros atendiendo a su nombre. Existen juegos que 
+incluyen todos los idiomas en un solo fichero, de modo que en tales casos no
+será util.
+
+¿ Es sólo para juegos PS3 ?
+----------------------------
+No. Squeelang, es un "procesador" de ficheros en masa (parecido a un "find 
+exec" de Unix). Por tanto es útil incluso para acciones administrativas diarias.
+Ej: ¿ quieres borras ficheros temporales de tu PC ? Busca los ".tmp$" y ejecuta 
+"borrar".
+
+¿ Lo puedo ejecutar en GNU/Linux ?
+--------------------------------------
+Sí. Squeeze es multiplataforma y está programado usando librerías estándar de 
+Lazarus, así que podrás compilar el código fuente para ejecutarlo en 
+GNU/Linux.
+El lema de Lazarus es "Write Once, compile anywhere".
+
+¿ Por qué hicieste este programa ?
+--------------------------------------
+Estaba aburrido un domingo en casa viendo un partido de futbo, y tengo poco 
+espacio en disco. Así que pensé seguro que hay una herramienta para ripear
+juegos ... pero soy vago, así que en vez de usar Google, preferí hacer una
+herramienta sencilla hecha a mi gusto,  fácil de usar y con código fuente libre
+para que la gente lo use, modifique y/o mejore.
+
+Puede dañar mi consola ?
+-----------------------------
+No. pienso que no. En el peor de los casos, si no seleccionas los patrones de
+búsqueda correctos, puedes borrar o dañar ficheros útiles para el juego, con lo
+cual el juego no se iniciará o quedará congelado. Pero siempre podrás restaurar
+esos ficheros desde tu juego original.
+
+Agradecimientos
+------------------
+* Proyecto lazarus (http://www.lazarus.freepascal.org), por su herramienta RAD 
+clon de Delphi.
+* Andrey V. Sorokin, por su librería para el reconocimiento de expresiones 
+regulares.
+* A http://www.clandragonrojo.es por apoyarme en mi idea.
+* A toda la comunidad de la scene de PS3, son un motivo de inspiración.
+* Al patido de futbol por aburrirme el pasado domingo.
+
+
+Licencia: Free (Libre).
+-----------------------
+
+Usa, cambia o mejora el software y el código como quieras.
+
+1.- Este software se suministra tal cual, sin ningún tipo de garantía.
+      Úsalo bajo tu propio riesgo y responsabilidad. El autor no es
+      responsable de cualquier consecuencia en el uso de este software
+      (¡ puñetas, es libre ! ¿ qué más quieres ?)
+
+2.- El origen de este software no puede ser mal interpretado.  No
+      debes decir que eres el autor original de este software. Si varías el
+      código o lo utilizas en un producto comercial, te agradecería que
+      me hicieras referencia a mi y al resto de autores de las librerías
+      utilizadas.

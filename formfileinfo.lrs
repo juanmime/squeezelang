@@ -1,0 +1,13 @@
+{ Este es un archivo de recurso de Lazarus generado automáticamente }
+
+LazarusResources.Add('TfrmFileInfo','FORMDATA',[
+  'TPF0'#12'TfrmFileInfo'#11'frmFileInfo'#4'Left'#3'+'#1#6'Height'#3'4'#1#3'Top'
+  +#3#147#0#5'Width'#3#28#2#11'BorderIcons'#11#12'biSystemMenu'#0#11'BorderStyl'
+  +'e'#7#8'bsDialog'#7'Caption'#6#4'Info'#12'ClientHeight'#3'4'#1#11'ClientWidt'
+  +'h'#3#28#2#6'OnShow'#7#8'FormShow'#8'Position'#7#16'poMainFormCenter'#10'LCL'
+  +'Version'#6#8'0.9.28.2'#0#5'TMemo'#5'Memo1'#4'Left'#2#16#6'Height'#3#248#0#3
+  +'Top'#2#8#5'Width'#3#254#1#8'ReadOnly'#9#10'ScrollBars'#7#10'ssAutoBoth'#8'T'
+  +'abOrder'#2#0#0#0#7'TBitBtn'#7'BitBtn1'#4'Left'#3#240#0#6'Height'#2#30#3'Top'
+  +#3#8#1#5'Width'#2'K'#7'Caption'#6#3'&Ok'#7'Default'#9#4'Kind'#7#4'bkOK'#11'M'
+  +'odalResult'#2#1#8'TabOrder'#2#1#0#0#0
+]);

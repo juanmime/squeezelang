@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <Title Value="squeezelang"/>
+      <Icon Value="0"/>
+      <UseXPManifest Value="True"/>
+    </General>
+    <i18n>
+      <OutDir Value="translations"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <CurrentMajorRevNr Value="2"/>
+      <CurrentBuildNr Value="143"/>
+      <ProjectVersion Value="0.1.1.1"/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="D:\compartidos\squeezelang\publish\src"/>
+      <CommandAfter Value="c:\lazarus\fpc\2.2.4\bin\i386-win32\upx.exe -9 D:\compartidos\squeezelang\publish\src\*.exe"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml|lng|png|ico|exe)"/>
+      <UseExcludeFileFilter Value="True"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="12">
+      <Unit0>
+        <Filename Value="squeezelang.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="squeezelang"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="formmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormMain"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="RegExpr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RegExpr"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="formerrors.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmErrors"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormErrors"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="formabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAbout"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormAbout"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="filecommands.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FileCommands"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="formbik.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBIK"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormBik"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="videoencode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VideoEncode"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="formm2v.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmM2V"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formm2v"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="images\config.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Config"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="formconfig.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmConfig"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormConfig"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="formfileinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFileInfo"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormFileInfo"/>
+      </Unit11>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)\"/>
+      <OtherUnitFiles Value="images\"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <SmallerCode Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

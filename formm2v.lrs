@@ -1,0 +1,34 @@
+{ Este es un archivo de recurso de Lazarus generado automáticamente }
+
+LazarusResources.Add('TfrmM2V','FORMDATA',[
+  'TPF0'#7'TfrmM2V'#6'frmM2V'#4'Left'#3'('#2#6'Height'#3#236#0#3'Top'#3#191#0#5
+  +'Width'#3#252#0#11'BorderIcons'#11#12'biSystemMenu'#0#11'BorderStyle'#7#8'bs'
+  +'Dialog'#7'Caption'#6#10'M2V Config'#12'ClientHeight'#3#236#0#11'ClientWidth'
+  +#3#252#0#10'OnActivate'#7#12'FormActivate'#8'Position'#7#16'poMainFormCenter'
+  +#10'LCLVersion'#6#8'0.9.28.2'#0#6'TLabel'#14'lblEncoderPath'#4'Left'#2#26#6
+  +'Height'#2#14#3'Top'#2#14#5'Width'#2'A'#7'Caption'#6#12'Encoder path'#11'Par'
+  +'entColor'#8#0#0#6'TLabel'#12'lblAssistant'#4'Left'#2#24#6'Height'#2#14#3'To'
+  +'p'#2'@'#5'Width'#2'-'#7'Caption'#6#9'Assistant'#11'ParentColor'#8#0#0#6'TLa'
+  +'bel'#7'lblSize'#4'Left'#3#187#0#6'Height'#2#24#3'Top'#2#4#5'Width'#2'('#7'C'
+  +'aption'#6#3'50%'#11'Font.Height'#2#237#11'ParentColor'#8#10'ParentFont'#8#0
+  +#0#5'TEdit'#8'eEncName'#4'Left'#2#24#6'Height'#2#21#3'Top'#2' '#5'Width'#3
+  +#208#0#8'TabOrder'#2#0#4'Text'#6#15'tools\ReJig.exe'#0#0#7'TBitBtn'#7'BitBtn'
+  +'1'#4'Left'#2' '#6'Height'#2#30#3'Top'#3#184#0#5'Width'#2'K'#7'Caption'#6#3
+  +'&Ok'#7'Default'#9#4'Kind'#7#4'bkOK'#11'ModalResult'#2#1#7'OnClick'#7#12'Bit'
+  +'Btn1Click'#8'TabOrder'#2#1#0#0#7'TBitBtn'#7'BitBtn2'#4'Left'#3#152#0#6'Heig'
+  +'ht'#2#30#3'Top'#3#184#0#5'Width'#2'K'#6'Cancel'#9#7'Caption'#6#4'Exit'#4'Ki'
+  +'nd'#7#8'bkCancel'#11'ModalResult'#2#2#8'TabOrder'#2#2#0#0#6'TPanel'#8'pnlRe'
+  +'gij'#4'Left'#2#26#6'Height'#2'2'#3'Top'#2'q'#5'Width'#3#206#0#12'ClientHeig'
+  +'ht'#2'2'#11'ClientWidth'#3#206#0#8'TabOrder'#2#3#0#9'TTrackBar'#9'tbQuality'
+  +#4'Left'#2#6#6'Height'#2#25#3'Top'#2#16#5'Width'#3#186#0#3'Max'#2'c'#3'Min'#2
+  +#1#8'OnChange'#7#15'tbQualityChange'#8'Position'#2'F'#8'TabOrder'#2#0#0#0#0#6
+  +'TPanel'#9'pnlffmpeg'#4'Left'#2#24#6'Height'#2'2'#3'Top'#2'p'#5'Width'#3#208
+  +#0#12'ClientHeight'#2'2'#11'ClientWidth'#3#208#0#8'TabOrder'#2#4#7'Visible'#8
+  +#0#6'TLabel'#6'Label2'#4'Left'#2#16#6'Height'#2#14#3'Top'#2#17#5'Width'#2'!'
+  +#7'Caption'#6#7'Bitrate'#11'ParentColor'#8#0#0#5'TEdit'#8'eBitRate'#4'Left'#2
+  +'@'#6'Height'#2#21#3'Top'#2#14#5'Width'#2'x'#8'TabOrder'#2#0#4'Text'#6#6'200'
+  +'00k'#0#0#0#9'TComboBox'#11'cbAssistant'#4'Left'#2#26#6'Height'#2#21#3'Top'#2
+  +'P'#5'Width'#3#206#0#10'ItemHeight'#2#13#9'ItemIndex'#2#0#13'Items.Strings'#1
+  +#6#5'regij'#6#6'ffmpeg'#0#8'OnChange'#7#17'cbAssistantChange'#5'Style'#7#14
+  +'csDropDownList'#8'TabOrder'#2#5#4'Text'#6#5'regij'#0#0#0
+]);

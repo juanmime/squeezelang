@@ -1,0 +1,175 @@
+{ Este es un archivo de recurso de Lazarus generado automáticamente }
+
+LazarusResources.Add('TfrmAbout','FORMDATA',[
+  'TPF0'#9'TfrmAbout'#8'frmAbout'#4'Left'#3'y'#1#6'Height'#3#133#1#3'Top'#3#159
+  +#0#5'Width'#3#5#2#11'BorderIcons'#11#12'biSystemMenu'#0#11'BorderStyle'#7#8
+  +'bsDialog'#7'Caption'#6#9'About ...'#12'ClientHeight'#3#133#1#11'ClientWidth'
+  +#3#5#2#8'Position'#7#16'poMainFormCenter'#10'LCLVersion'#6#8'0.9.28.2'#0#7'T'
+  +'BitBtn'#7'BitBtn1'#4'Left'#3#216#0#6'Height'#2#30#3'Top'#3'X'#1#5'Width'#2
+  +'`'#7'Caption'#6#3'&Ok'#7'Default'#9#4'Kind'#7#4'bkOK'#11'ModalResult'#2#1#8
+  +'TabOrder'#2#0#0#0#9'TNotebook'#9'Notebook1'#4'Left'#2#16#6'Height'#3'H'#1#3
+  +'Top'#2#8#5'Width'#3#232#1#9'PageIndex'#2#0#8'TabOrder'#2#1#0#5'TPage'#5'Pag'
+  +'e2'#7'Caption'#6#7'English'#11'ClientWidth'#3#224#1#12'ClientHeight'#3','#1
+  +#0#5'TMemo'#5'Memo1'#4'Left'#2#16#6'Height'#3#8#1#3'Top'#2#16#5'Width'#3#192
+  +#1#13'Lines.Strings'#1#6'!Squeezelang v.0.2.1. (aka. shuar)'#6#16'Date: 2011'
+  +'-02-20'#6#21'Developed by juanmime'#6#31'http://www.twitter.com/juanmime'#6
+  +'''Member of: http://www.clandragonrojo.es'#6#14'Licence: Free.'#6#0#6#15'De'
+  +'tails v.0.2.1'#6#18'------------------'#6'ELittle bug fixed, when mixing bi'
+  +'k audio files (path file with spaces)'#6#0#6#15'Details v.0.2.0'#6#18'-----'
+  +'-------------'#6'OA lot of functions. Multicolumn File List with sorting co'
+  +'lumns. Video encoding '#6#12'(M2V, BIK). '#6'NMultitheads. Save / Open Job '
+  +'List. Play video. Copy Video File path, and more)'#6#0#6#15'Details v.0.1.9'
+  +#6#18'------------------'#6'(*) Solved bug red status bar background.'#6#0#6
+  +#21'What is Squeezelang ?'#6#25'-------------------------'#6'KIf you have HD'
+  +' backups of your original PS3 games, quickly you see how fast'#6'Fis filled'
+  +' with two or three games ... and secure you''ve ever wondered:'#6'4are need'
+  +'ed the 3.000 or 4.000 files inside to play ?'#6#0#6'MThe reality is that no'
+  +'t all are necessary. Many are to support multi-language'#6'7games, but like'
+  +' most players play in one language  ....'#6'+why do you want the rest of th'
+  +'e languages ?'#6#0#6')But What is it ? What does Squeezlang do?'#6',-------'
+  +'-------------------------------------'#6'MSqueezelang aims to help you loca'
+  +'te the files that represent the languages of'#6'Mthe games and allows you t'
+  +'o "shrink" quick and easy so reduce space, and save'#6':the planet ("less s'
+  +'ize", "less hot", "less CO2 emissions")'#6#0#6#15'How does it do?'#6#17'---'
+  +'--------------'#6'NIn essence, squeezelang is a simple program to do things'
+  +' with a selected files'#6#31'in bulk. It currently supports:'#6#0#6'@*) Shr'
+  +'ink: Maintains the original file and empty their contents.'#6#26'*) Delete:'
+  +' Delete the file'#6'L*) Execute: Perform an external program as a parameter'
+  +' passing the selected '#6#5'file.'#6'K*) Replace: Replace the original file'
+  +' with the contents of an existing one.'#6#0#6'RThe default is shrink. If yo'
+  +'u delete the files, some games detect its absence and '#6#5'fail.'#6#0#6'OT'
+  +'he run option is useful, for example, to recode videos to inferior quality '
+  +'or '#6#10'resolution'#6',with an external program (which reduce them)'#6#0#6
+  +'OThe "Replace" option is useful when we want to replace videos others of sh'
+  +'orter'#6'2duration, if we want to or not know how to recode.'#6#0#6#20'Work'
+  +' for all games ?'#6#22'----------------------'#6'ONo. That''s what I would '
+  +'wish. Squeezelang, find files based on their filename. '#6#9'There are'#6'R'
+  +'games that include all languages in a single file, so in such cases is not '
+  +'useful.'#6#0#6#26'Is it only for PS3 games ?'#6#26'------------------------'
+  +'--'#6'LNo. Squeelang, is a "bulk file processor" (similiar to "find exec" i'
+  +'n Unix).'#6'?Therefore It''s useful even for everyday administrative action'
+  +'s.'#6'JExample: Do you want to delete temp files in your PC ? Search ".tmp$'
+  +'" and '#6#7'perform'#6#9'"Delete".'#6#0#6#27'Does it work in GNU/Linux ?'#6
+  +#30'------------------------------'#6'IYes. Squeeze is cross platform and is'
+  +' programmed using standard libraries'#6'BLazarus and you can compile the so'
+  +'urce code to run on GNU / Linux.'#6'.Lazarus claims "Write Once, compile an'
+  +'ywhere".'#6#0#6'"Why did you did this application ?'#6'&-------------------'
+  +'-------------------'#6'OI was bored on a Sunday at home watching a soccer m'
+  +'atch, and I had little disk '#6'Qspace. So I thought sure there is a tool f'
+  +'or ripping games ... but I am vague, so'#6'Minstead of Googling, I preferre'
+  +'d to make a simple tool made to my taste, easy'#6'Gto use and free source c'
+  +'ode for people to use, modify and / or improve.'#6#0#6#25'Can I damage my C'
+  +'onsole ?'#6#29'-----------------------------'#6'SNo. I think so. At the wor'
+  +'st case, if you don''t select the correct patterns you can'#6'Ndelete usefu'
+  +'l files in the game, and the game will freeze. But you can restore'#6'"them'
+  +' from your original game disk.'#6#0#6#9'Thanks to'#6#11'-----------'#6'N* P'
+  +'roject Lazarus (http://www.lazarus.freepascal.org), for their RAD tool and '
+  +#6#14'Delphi''s clon.'#6'6* Andrey V. Sorokin, for his pattern matching libr'
+  ,'ary.'#6'<* http://www.clandragonrojo.es for supporting me in my idea.'#6':*'
+  +' Whole community of the scene of PS3, are an inspiration.'#6'1* Ffmpeg proj'
+  +'ect, mencoder project, rejig autors.'#6'M* RAD Game Tools for giving us the'
+  +' BINK reencoder free (gratis) but only for '#6' windows and without source '
+  +'code.'#6'8* To the boring soccer match, for boring me last Sunday.'#6#0#6#0
+  +#6#22'Licence: Free (Libre).'#6#22'----------------------'#6#0#6'9Use, chang'
+  +'e or improve the software and code as you want.'#6#0#6'<1 .- This software '
+  +'is provided "as is" without any warranty.'#6'B       Use at your own risk. '
+  +'The author is not responsible for any'#6'0       consequences in the use of'
+  +' this software.'#6',      (Ey it''s free! what more do you want?)'#6#0#6'>2'
+  +' .- The origin of this software can not be misunderstood. You'#6'E       ca'
+  +'n''t say you are the original author of this software. If you'#6'D       va'
+  +'ry the code or used on a commercial product, I''d appreciate'#6'B       you'
+  +' made refer to me and the other authors of the libraries'#6#12'       used.'
+  +#0#8'ReadOnly'#9#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#0#0#0#0#5'TPa'
+  +'ge'#5'Page1'#7'Caption'#6#8'Espa'#195#177'ol'#11'ClientWidth'#3#224#1#12'Cl'
+  +'ientHeight'#3','#1#0#5'TMemo'#5'Memo2'#4'Left'#2#16#6'Height'#3#8#1#3'Top'#2
+  +#18#5'Width'#3#192#1#13'Lines.Strings'#1#6'"Squeezelang v.0.2.1. (alias shua'
+  +'r)'#6#16'Date: 2011-02-20'#6#21'Developed by juanmime'#6#31'http://www.twit'
+  +'ter.com/juanmime'#6'''Member of: http://www.clandragonrojo.es'#6#14'Licence'
+  +': Free.'#6#0#6#16'Detalles v.0.2.1'#6#18'------------------'#6'CCorregido p'
+  +'eque'#195#177'o fallo cuando seleccionaba las pistas de audio al'#6'Bremuti'
+  +'plexarlas en los ficheros bik (ruta de archivo con espacios)'#6#0#6#17'Deta'
+  +'lles  v.0.2.0'#6#18'------------------'#6'CMuchas funcionalidades nuevas. L'
+  +'istado de ficheros multicolumna con'#6'Fordenaci'#195#179'n. Recodificaci'
+  +#195#179'n de v'#195#173'deo (M2V, BIK). Multihilo. Guarda y'#6'ICarga la li'
+  +'sta de trabajo de  recodificaci'#195#179'n. Reproduce v'#195#173'deo. Copia'
+  +' la'#6'Cruta de un archivo al portapapeles, iconos en los botones, y muchas'
+  +#6#11'cosas m'#195#161's.'#6#0#6#16'Detalles v.0.1.9'#6#20'-----------------'
+  +'---'#6';*) Corregido el error del fondo rojo en la barra de estado.'#6#0#6
+  +#24#194#191' Qu'#195#169' es Squeezelang ?'#6#25'-------------------------'#6
+  +'KSi tienes copias de seguridad en disco duro de tus juegos originales de PS'
+  +'3'#6'Nr'#195#161'pidamente ver'#195#161's lo r'#195#161'pido que se llena c'
+  +'on dos o tres juegos ... y seguro'#6'Oque te habr'#195#161's preguntado alg'
+  +'una vez '#194#191' son necesarios los 3000 o 4000 ficheros'#6#24'que vienen'
+  +' en el juego ?'#6#0#6'GLa realidad es que no todos son necesarios. Muchos s'
+  +'on para dar soporte'#6'Kmulti-idioma a los juegos, pero como la mayor'#195
+  +#173'a de los jugadores juegan en'#6'>un s'#195#179'lo idioma '#194#191' par'
+  +'a qu'#195#169' quieres el resto de los idiomas ?'#6#0#6'.'#194#191' Para qu'
+  +#195#169' sirve ? '#194#191' qu'#195#169' hace Squeezlang ?'#6',------------'
+  +'--------------------------------'#6'LSqueezelang pretende ayudarte a locali'
+  +'zar los ficheros que representan a los'#6'Oidiomas del juego y te permite "'
+  +'menguarlos" de forma r'#195#161'pida y f'#195#161'cil para as'#195#173#6'Kr'
+  +'educir espacio, y salvar el planeta ("menor tama'#195#177'o", "menos emisio'
+  +'nes de '#6'!calor", "menos emisiones de CO2")'#6#0#6#18#194#191' C'#195#179
+  +'mo lo hace ?'#6#18'------------------'#6'IEn esencia, squeezelang es un sen'
+  +'cillo programa para hacer cosas con unos'#6'<ficheros seleccionados de form'
+  +'a masiva. Actualmente permite:'#6#0#6'?*) Reducir: Mantiene el fichero orig'
+  +'inal vaciando su contenido.'#6#30'*) Borrar: Eliminar el fichero'#6'L*) Eje'
+  +'cutar: Permite ejecutar un programa externo pas'#195#161'ndole como par'#195
+  +#161'metro'#6#24'el archivo seleccionado.'#6'O*) Sustituir: Reemplaza el fic'
+  +'hero original con el contenido de otro existente.'#6#0#6'MLa opci'#195#179
+  +'n por defecto es reducir. Si borras los archivos existen juegos que '#6#30
+  +'detectan su ausencia y fallan.'#6#0#6'WLa opci'#195#179'n ejecutar es '#195
+  +#186'til, por ejemplo, para recodificar v'#195#173'deos a inferior calidad '
+  +#6'Fo resoluci'#195#179'n con un programa externo (con lo cual se reduce tam'
+  +'a'#195#177'o).'#6#0#6'PLa opci'#195#179'n sustituir, es '#195#186'til cuand'
+  +'o tenemos v'#195#173'deos que queremos reemplazarlos'#6'Dpor otros de menor'
+  +' duraci'#195#179'n, en caso de que no querramos o sepamos '#6#15'recodifica'
+  +'rlos.'#6#0#6' '#194#191' Sirve para todos los juegos ?'#6#31'--------------'
+  +'-----------------'#6'KNo. Squeezelang, busca ficheros atendiendo a su nombr'
+  +'e. Existen juegos que '#6'Lincluyen todos los idiomas en un solo fichero, d'
+  +'e modo que en tales casos no'#6#11'ser'#195#161' util.'#6#0#6#29#194#191' E'
+  +'s s'#195#179'lo para juegos PS3 ?'#6#28'----------------------------'#6'KNo'
+  ,'. Squeelang, es un "procesador" de ficheros en masa (parecido a un "find '#6
+  +'Qexec" de Unix). Por tanto es '#195#186'til incluso para acciones administr'
+  +'ativas diarias.'#6'QEj: '#194#191' quieres borras ficheros temporales de tu'
+  +' PC ? Busca los ".tmp$" y ejecuta '#6#9'"borrar".'#6#0#6'#'#194#191' Lo pue'
+  +'do ejecutar en GNU/Linux ?'#6'&--------------------------------------'#6'RS'
+  +#195#173'. Squeeze es multiplataforma y est'#195#161' programado usando libr'
+  +'er'#195#173'as est'#195#161'ndar de '#6'HLazarus, as'#195#173' que podr'#195
+  +#161's compilar el c'#195#179'digo fuente para ejecutarlo en '#6#10'GNU/Linu'
+  +'x.'#6'5El lema de Lazarus es "Write Once, compile anywhere".'#6#0#6'$'#194
+  +#191' Por qu'#195#169' hicieste este programa ?'#6'&------------------------'
+  +'--------------'#6'LEstaba aburrido un domingo en casa viendo un partido de '
+  +'futbo, y tengo poco '#6'Lespacio en disco. As'#195#173' que pens'#195#169' '
+  +'seguro que hay una herramienta para ripear'#6'Ljuegos ... pero soy vago, as'
+  +#195#173' que en vez de usar Google, prefer'#195#173' hacer una'#6'Qherramie'
+  +'nta sencilla hecha a mi gusto,  f'#195#161'cil de usar y con c'#195#179'dig'
+  +'o fuente libre'#6'/para que la gente lo use, modifique y/o mejore.'#6#0#6#25
+  +'Puede da'#195#177'ar mi consola ?'#6#29'-----------------------------'#6'MN'
+  +'o. pienso que no. En el peor de los casos, si no seleccionas los patrones d'
+  +'e'#6'Rb'#195#186'squeda correctos, puedes borrar o da'#195#177'ar ficheros '
+  +#195#186'tiles para el juego, con lo'#6'Rcual el juego no se iniciar'#195#161
+  +' o quedar'#195#161' congelado. Pero siempre podr'#195#161's restaurar'#6'&e'
+  +'sos ficheros desde tu juego original.'#6#0#6#15'Agradecimientos'#6#18'-----'
+  +'-------------'#6'O* Proyecto lazarus (http://www.lazarus.freepascal.org), p'
+  +'or su herramienta RAD '#6#15'clon de Delphi.'#6'L* Andrey V. Sorokin, por s'
+  +'u librer'#195#173'a para el reconocimiento de expresiones '#6#10'regulares.'
+  +#6'9* A http://www.clandragonrojo.es por apoyarme en mi idea.'#6'H* A toda l'
+  +'a comunidad de la scene de PS3, son un motivo de inspiraci'#195#179'n.'#6'9'
+  +'* Al proyecto ffmpeg, mencoder y a los creadores de Regij'#6'E* RAD Game To'
+  +'ols por ofrecernos gratis (aunque solo para windows) su '#6#20'codificador '
+  +'de BIKs.'#6'7* Al partido de futbol por aburrirme el pasado domingo.'#6#0#6
+  +#0#6#23'Licencia: Free (Libre).'#6#23'-----------------------'#6#0#6';Usa, c'
+  +'ambia o mejora el software y el c'#195#179'digo como quieras.'#6#0#6'H1.- E'
+  +'ste software se suministra tal cual, sin ning'#195#186'n tipo de garant'#195
+  +#173'a.'#6'D      '#195#154'salo bajo tu propio riesgo y responsabilidad. El'
+  +' autor no es'#6'F      responsable de cualquier consecuencia en el uso de e'
+  +'ste software'#6'6      ('#194#161' pu'#195#177'etas, es libre ! '#194#191' '
+  +'qu'#195#169' m'#195#161's quieres ?)'#6#0#6'A2.- El origen de este software'
+  +' no puede ser mal interpretado.  No'#6'L      debes decir que eres el autor'
+  +' original de este software. Si var'#195#173'as el'#6'I      c'#195#179'digo'
+  +' o lo utilizas en un producto comercial, te agradecer'#195#173'a que'#6'I  '
+  +'    me hicieras referencia a mi y al resto de autores de las librer'#195#173
+  +'as'#6#17'      utilizadas.'#0#8'ReadOnly'#9#10'ScrollBars'#7#10'ssAutoBoth'
+  +#8'TabOrder'#2#0#0#0#0#0#0
+]);
